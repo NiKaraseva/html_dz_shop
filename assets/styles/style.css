@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Lato', sans-serif;
     src: url(./assets/fonts/Lato-Thin.ttf);
     font-weight: 100;
@@ -26,6 +26,12 @@
     font-family: 'Lato', sans-serif;
     src: url(./assets/fonts/Lato-Black.ttf);
     font-weight: 900;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+html{
+    font-family: 'Lato', sans-serif;
 }
 
 body{
@@ -35,10 +41,6 @@ body{
 *{
     margin: 0;
     padding: 0;
-}
-
-html{
-    font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -62,6 +64,11 @@ html{
     gap: 41px;
 }
 
+.header-right{
+    display: flex;
+    gap: 25px;
+}
+
 .intro-colour{
     background-color: #F1E4E6;
 }
@@ -71,10 +78,10 @@ html{
     margin: 0 auto; 
     display: flex;
     gap: 64px;
+    align-items: center;
 }
 
 .intro-title{
-    margin-top: 290px;
     display: flex;
     align-items: flex-start;
     gap: 16px;
@@ -222,4 +229,55 @@ html{
     cursor: pointer;
 }
 
+@media screen and (max-width: 1439px){
+    .container{
+        max-width: 736px;
+    }
 
+    .intro{
+        gap: 39px;
+    }
+    
+    .intro-text-1{
+        font-size: 44px;
+    }
+    
+    .intro-text-2{
+        font-size: 24px;
+    }
+    
+    .intro-text-3{
+        color: #F16D7F;
+    }
+
+    .categories{
+        gap: 20px;
+    }
+
+    .fetured-items-header{
+        gap: 3.5px;
+    }
+    
+    .fetured-items-wrapper{
+        margin-top: 110px;
+    }
+
+    .fetured-items-general{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 74px;
+    }
+    
+    .fetured-items-content{
+        padding-top: 25px;
+        padding-right: 29px;
+        padding-bottom: 20px;
+        padding-left: 17px;
+    }
+
+    .button-content{
+        margin-top: 33px;
+        margin-bottom: 71px;
+    }
+}
