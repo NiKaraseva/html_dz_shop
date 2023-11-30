@@ -316,6 +316,7 @@ body{
 
     .intro{
         height: 363px;
+        justify-content: center;
     }
 
     .intro-title{
