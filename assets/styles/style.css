@@ -43,7 +43,7 @@ body{
     padding: 0;
 }
 
-.container, .containerV {
+.container, .containerV2, .containerV3 {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -474,10 +474,73 @@ body{
     fill: #FFFFFF
 }
 
+.header_down-menu{
+    display: none;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    background-color: #FFF;
+    z-index: 2;
+}
+
+.burger:hover .header_down-menu{
+    display: block;
+}
+
+.menu__title{
+    margin-top: 32px;
+    margin-left: 33px;
+    margin-right: 144px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menu__subtitle{
+    margin-top: 20px;
+    margin-left: 32px;
+    color: #F16D7F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__man{
+    margin-top: 24px;
+}
+
+.menu__item{
+    margin-top: 11px;
+    margin-left: 53.5px;
+}
+
+.menu__first-access{
+    margin-top: 12px;
+}
+
+.menu__last-bag{
+    margin-bottom: 32px;
+}
+
+.menu__item-link{
+    text-decoration: none;
+    color: #6F6E6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 @media screen and (max-width: 1439px){
-    .container, .containerV2{
+    .container, .containerV2, .containerV3 {
         max-width: 736px;
+    }
+
+    .containerV3 {
+        max-width: 100%;
+        margin-left: 32px ;
+        margin-right: 32px;
     }
 
     .intro{
@@ -571,7 +634,7 @@ body{
 
 
 @media screen and (max-width: 767px){
-    .container{
+    .container {
         max-width: 100%;
         margin-left: 16px ;
         margin-right: 16px;
